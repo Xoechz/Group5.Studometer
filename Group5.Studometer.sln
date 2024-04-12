@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Group5.Studometer.Backend", "Group5.Studometer.Backend\Group5.Studometer.Backend.csproj", "{C7167565-7309-4C79-912B-963DD5E74471}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Group5.Studometer.Backend", "Group5.Studometer.Backend\Group5.Studometer.Backend.csproj", "{C7167565-7309-4C79-912B-963DD5E74471}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Group5.Studometer.ProfessorApp", "Group5.Studometer.ProfessorApp\Group5.Studometer.ProfessorApp.csproj", "{1EEC051F-AB82-4477-A36D-AE392687E842}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Group5.Studometer.ProfessorApp", "Group5.Studometer.ProfessorApp\Group5.Studometer.ProfessorApp.csproj", "{1EEC051F-AB82-4477-A36D-AE392687E842}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Group5.Studometer.StudentApp", "Group5.Studometer.StudentApp\Group5.Studometer.StudentApp.csproj", "{7142F0FD-DB4C-48F5-AE40-DB04A26F0899}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Group5.Studometer.StudentApp", "Group5.Studometer.StudentApp\Group5.Studometer.StudentApp.csproj", "{7142F0FD-DB4C-48F5-AE40-DB04A26F0899}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
