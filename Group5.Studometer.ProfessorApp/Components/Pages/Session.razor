@@ -1,0 +1,39 @@
+﻿@page "/session"
+@attribute [StreamRendering]
+
+<PageTitle>Session</PageTitle>
+
+
+<h1>Scan this QR-Code to login!</h1>
+<div class="container">
+    <img src="qr.png" style="height: 200px;" />
+</div>
+
+<a href="/rate" class="btn btn-primary">End Session</a>
+
+<h3>Current Ratings</h3>
+<p>@CurrentRating1</p>
+<p>@CurrentRating2</p>
+<p>@CurrentRating3</p>
+
+@code {
+    private string CurrentRating1 { get; set; } = "(1): 5 :)";
+    private string CurrentRating2 { get; set; } = "(2): 4 :/";
+    private string CurrentRating3 { get; set; } = "(3): 3 :(";
+    private string[] Emojis = new string[] { ":)", ":(", ":O", ">:(", ":/", ":,(" };
+
+    protected override async Task OnInitializedAsync()
+    {
+        while(true)
+        {
+            await Task.Delay(2000);
+            var randomEmojis = Emojis.OrderBy(x => Random.Shared.Next())
+                .Take(3)
+                .ToList();
+            CurrentRating1 = $"(1): {Random.Shared.Next(21, 30)} {randomEmojis[0]}";
+            CurrentRating2 = $"(2): {Random.Shared.Next(11, 20)} {randomEmojis[1]}";
+            CurrentRating3 = $"(3): {Random.Shared.Next(1, 10)} {randomEmojis[2]}";
+            StateHasChanged();
+        }
+    }
+}
