@@ -51,7 +51,10 @@ namespace Group5.Studometer.Backend.Controllers
         /// <returns>The session code.</returns>
         [HttpPost("start/{students}", Name = "StartSession")]
         public string StartSession(string students)
-            => $"Session Code for {students}";
+        {
+            _logger.LogInformation("Starting session for {students}", students);
+            return "SessionCode";
+        }
 
         #endregion Public Methods
     }
