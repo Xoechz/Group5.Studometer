@@ -4,6 +4,10 @@ internal class Program
 {
     #region Private Methods
 
+    /// <summary>
+    /// The entry point of the application.
+    /// </summary>
+    /// <param name="args">The command-line arguments.</param>
     private static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
